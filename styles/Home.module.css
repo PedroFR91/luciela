@@ -6,7 +6,9 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
+  z-index: 0;
 }
+/*SECTION ONE*/
 .imageContainer {
   width: 100%;
   height: 100%;
@@ -51,8 +53,298 @@
   height: 5rem;
   display: inline-block;
   position: absolute;
-  bottom: 5vh;
+  top: 85vh;
   left: 50%;
   transform: translateX(-50%);
   transform: rotate(90deg);
+}
+/*SECTION TWO*/
+.secondTitle {
+  width: 70%;
+  height: 20vh;
+  margin: 20vh auto 0;
+  font-size: 3rem;
+  text-align: left;
+}
+.secondTitle span {
+  font-weight: 600;
+}
+.contentTwo {
+  position: relative;
+  width: 70%;
+  height: 80vh;
+  margin: 20vh auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.textdiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.textdiv h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.textdiv p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.textdiv p span {
+  font-weight: 600;
+}
+.textdiv button {
+  width: 200px;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+.imgtwo {
+  width: 80%;
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  z-index: 10;
+  padding: 0.3rem;
+  background-color: #fff;
+}
+.imgthree {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.square {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  border: 2px solid #ffffff50;
+  z-index: 5;
+}
+.rombos {
+  position: absolute;
+  top: 40vh;
+  left: 10%;
+  width: 5rem;
+  height: 3rem;
+  z-index: 1;
+}
+.rombosThree {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 5rem;
+  height: 3rem;
+  z-index: 1;
+}
+.romboone {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.rombotwo {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.circlesV {
+  position: absolute;
+  top: 70vh;
+  left: 57%;
+  width: 1rem;
+  height: 8rem;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.circlesH {
+  position: absolute;
+  top: 105vh;
+  left: 85%;
+  width: 1rem;
+  height: 8rem;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.circle {
+  width: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: #000;
+  border-radius: 50%;
+}
+/*SECTION THREE*/
+.contentThree {
+  position: relative;
+  width: 70%;
+  min-height: 150vh;
+  margin: 20vh auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 10;
+  margin-bottom: 3rem;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 10;
+}
+.bottom button {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 200px;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+.titleThree {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 10vh;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  text-align: right;
+}
+.imgfour {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+}
+.imgfour .shadow {
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffffc0;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+  padding: 0.7rem;
+  font-weight: 500;
+}
+.imgfive {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+.imgfive .shadow {
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffffc0;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+  padding: 0.7rem;
+  font-weight: 500;
+}
+.imgsix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+.imgsix .shadow {
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffffc0;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+  padding: 0.7rem;
+  font-weight: 500;
+}
+.imgseven {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+}
+.imgseven .shadow {
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffffc0;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+  padding: 0.7rem;
+  font-weight: 500;
+}
+/*SECTION FOUR*/
+.contentFour {
+  position: relative;
+  width: 70%;
+  height: 80vh;
+  margin: 20vh auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+}
+.imgeight {
+  height: 80%;
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  z-index: 10;
+  padding: 0.3rem;
+  background-color: #fff;
+}
+.imgnine {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

@@ -1,10 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import Header from '@/components/Header';
-
-const inter = Inter({ subsets: ['latin'] });
+import Curtain from '@/components/Curtain';
 
 export default function Home() {
   return (
@@ -15,48 +12,155 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Curtain />
       <main className={styles.main}>
-        <div className={styles.sectionOne}>
-          <img
-            src='/HomePrincipal.png'
-            alt='Descripción de la imagen'
-            className={styles.imageContainer}
-            style={{
-              width: '100%',
-              height: 'auto', // Para mantener la relación de aspecto, usa 'height: auto'
-              objectFit: 'cover', // Ajusta la imagen para cubrir el contenedor sin deformarla
-            }}
-          />
+        <>
           <Header />
-          <div className={styles.title}>
-            <p>
-              Lo sostenible
-              <br /> puede ser
-              <br /> bello
-            </p>
-            <div className={styles.dots}>
-              <div className={styles.dot}></div>
-              <div className={styles.dot}></div>
-              <div className={styles.dot}></div>
-              <div className={styles.dot}></div>
-              <div className={styles.dot}></div>
+          <div className={styles.sectionOne}>
+            <img
+              src='/HomePrincipal.png'
+              alt='Descripción de la imagen'
+              className={styles.imageContainer}
+              style={{
+                width: '100%',
+                height: 'auto', // Para mantener la relación de aspecto, usa 'height: auto'
+                objectFit: 'cover', // Ajusta la imagen para cubrir el contenedor sin deformarla
+              }}
+            />
+
+            <div className={styles.title}>
+              <p>
+                Lo sostenible
+                <br /> puede ser
+                <br /> bello
+              </p>
+              <div className={styles.dots}>
+                <div className={styles.dot}></div>
+                <div className={styles.dot}></div>
+                <div className={styles.dot}></div>
+                <div className={styles.dot}></div>
+                <div className={styles.dot}></div>
+              </div>
+            </div>
+            <img src='/fastforward.svg' className={styles.botonmovimiento} />
+          </div>
+          <div className={styles.sectionTwo}>
+            <div className={styles.secondTitle}>
+              LA INDUSTRIA DE LA MODA GENERA <span>92 MILLONES</span> DE <br />
+              TONELADAS DE RESIDUOS AL AÑO
+            </div>
+            <div className={styles.rombos}>
+              <div className={styles.romboone}></div>
+              <div className={styles.rombotwo}></div>
+            </div>
+            <div className={styles.circlesV}>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+            </div>
+            <div className={styles.circlesH}>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+            </div>
+            <div className={styles.contentTwo}>
+              <div className={styles.textdiv}>
+                <h1>Nuestra visión</h1>
+                <p>
+                  Queremos crear ropa interior que sienta bien, que <br /> haga
+                  que te sientas bien, y que sea totalmente <br />{' '}
+                  <span>biodegradable</span> en los vertederos en menos de 5{' '}
+                  <br /> años.
+                </p>
+                <button>SOSTENIBILIDAD</button>
+              </div>
+              <div className={styles.imgtwo}>
+                <img src='/Home2.png' alt='home 2' width='100%' />
+              </div>
+              <div className={styles.imgthree}>
+                <img src='/Home3.png' alt='home 2' height='100%' />
+                <div className={styles.square}></div>
+              </div>
             </div>
           </div>
-
-          <img src='/fastforward.svg' className={styles.botonmovimiento} />
-        </div>
-        <div className={styles.sectionTwo}>
-          <h1>SectionTwo</h1>
-        </div>
-        <div className={styles.sectionThree}>
-          <h1>SectionThree</h1>
-        </div>
-        <div className={styles.sectionFour}>
-          <h1>SectionFour</h1>
-        </div>
-        <div className={styles.sectionFive}>
-          <h1>SectionFive</h1>
-        </div>
+          <div className={styles.sectionThree}>
+            <div className={styles.rombosThree}>
+              <div className={styles.romboone}></div>
+              <div className={styles.rombotwo}></div>
+            </div>
+            <div className={styles.contentThree}>
+              <div className={styles.titleThree}>Nuestra colección</div>
+              <div className={styles.top}>
+                <div className={styles.imgfour}>
+                  <img src='/Home4.png' alt='home 2' width='100%' />
+                  <div className={styles.shadow}>Bragas</div>
+                </div>
+                <div className={styles.imgfive}>
+                  <img src='/Home5.png' alt='home 2' width='100%' />
+                  <div className={styles.shadow}>Bralette</div>
+                </div>
+              </div>
+              <div className={styles.bottom}>
+                <div className={styles.imgsix}>
+                  <img src='/Home6.png' alt='home 2' width='100%' />
+                  <div className={styles.shadow}>Body lencero</div>
+                </div>
+                <div className={styles.imgseven}>
+                  <img src='/Home7.png' alt='home 2' width='100%' />
+                  <div className={styles.shadow}>Picardías</div>
+                </div>
+                <button>VER PRODUCTOS</button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.sectionFour}>
+            <div className={styles.rombos}>
+              <div className={styles.romboone}></div>
+              <div className={styles.rombotwo}></div>
+            </div>
+            <div className={styles.circlesV}>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+            </div>
+            <div className={styles.circlesH}>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+            </div>
+            <div className={styles.contentFour}>
+              <div className={styles.textdiv}>
+                <h1>
+                  ¿Las tallas tradicionales
+                  <br /> no son para ti?
+                </h1>
+                <p>
+                  Ofrecemos un servicio a medida para las
+                  <br /> mujeres que buscan el<span>ajuste perfecto</span> .
+                </p>
+                <button>A MEDIDA</button>
+              </div>
+              <div className={styles.imgeight}>
+                <img src='/Home8.png' alt='home 2' width='100%' />
+              </div>
+              <div className={styles.imgnine}>
+                <img src='/Home9.png' alt='home 2' height='100%' />
+                <div className={styles.square}></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.sectionFive}>
+            <h1>SectionFive</h1>
+          </div>
+        </>
       </main>
     </>
   );
